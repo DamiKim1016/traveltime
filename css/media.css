@@ -1,0 +1,368 @@
+@media screen and (max-width: 1440px) {
+    body {
+        width: auto;
+    }
+    .inner {
+        padding: 0 3rem;
+    }
+    .hero {
+        max-height: 93rem;
+    }
+    .hero .img_wrap {
+        transform: translateY(20rem);
+    }
+    .hero .img_wrap .deco_airplane {
+        max-width: 50rem;
+        left: 9rem;
+    }
+    .hero .img_wrap .deco_cloud {
+        max-width: 64rem;
+        max-height: 40rem;
+    }
+    .dep1_list li {
+        margin-left: 2rem;
+    }
+} /* 1440px end */
+
+@media screen and (max-width: 1350px) {
+    .dep3_list .lst_txt_2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .inner {
+        padding: 0 2rem;
+    }
+    .dep1 {
+        padding: 10rem 0;
+    }
+    .ftr_dep2 {
+        padding: 2rem 10rem 2rem 2rem;
+    }
+    .ftr_dep2 h4 {
+        width: 15rem;
+    }
+} /* 1200px end */
+@media screen and (max-width: 1200px) {
+    /* mob icon */
+    header {
+        padding-top: 2rem;
+    }
+    .tit_mob {
+        width: 3.6rem;
+        height: 4.1rem;
+        display: block;
+        position: relative;
+        z-index: 6;
+    }
+    .tit_mob img {
+        width: 4rem;
+        position: absolute;
+    }
+    .tit_mob img.mob_logo_wh {
+        opacity: 1;
+    }
+    .tit_mob img.mob_logo_bl {
+        opacity: 0;
+    }
+
+    /* navigation menu */
+
+    .sch_kebab_wrap {
+        width: 8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mob_sch_ico_wrap {
+        display: block;
+        z-index: 6;
+    }
+    .kebab_ico {
+        width: 2.8rem;
+        height: 2.4rem;
+        display: block;
+        position: relative;
+        z-index: 6;
+    }
+    .kebab_ico span {
+        width: 100%;
+        height: .2rem;
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        transition: all .3s;
+    }
+    .kebab_ico span:nth-child(1) {
+        top: 0;
+    }
+    .kebab_ico span:nth-child(2) {
+        top: 48%;
+    }
+    .kebab_ico span:nth-child(3) {
+        top: 98%;
+    }
+    header h1.tit {
+        display: none;
+    }
+    nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        right: -100%;
+        top: 0;
+        z-index: 5;
+        transition: right .5s ease-in-out;
+    }
+    nav ul {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    nav ul a {
+        margin-left: 0;
+        font-size: 2.6rem;
+    }
+
+    nav ul li:nth-child(5) {
+        display: none;
+    }
+
+    /* navigation menu */
+    
+    .mob_sch {
+        width: 2.4rem;
+        opacity: 1;
+        position: absolute;
+        transition: all .3s;
+    }
+    .mob_sch_bl {
+        width: 2.4rem;
+        opacity: 0;
+    }
+    .kebab_ico {
+        width: 2.8rem;
+        height: 1.8rem;
+        display: block;
+        position: relative;
+        z-index: 6;
+    }
+    .kebab_ico span {
+        width: 100%;
+        height: .2rem;
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        transition: all .3s;
+    }
+    .kebab_ico span:nth-child(1) {
+        top: 0;
+    }
+    .kebab_ico span:nth-child(2) {
+        top: 48%;
+    }
+    .kebab_ico span:nth-child(3) {
+        top: 98%;
+    }
+    header h1.tit {
+        display: none;
+    }
+    nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.8);
+        right: -100%;
+        top: 0;
+        z-index: 5;
+        transition: right .5s ease-in-out;
+    }
+    nav ul {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    nav ul a {
+        margin-left: 0;
+        font-size: 2.6rem;
+    }
+
+    /* scrolling */
+
+    body.scrolling h1.tit_mob a img.mob_logo_bl {
+        opacity: 1;
+    }
+    body.scrolling h1.tit_mob a img.mob_logo_wh {
+        opacity: 0;
+    }
+    body.scrolling .kebab_ico span {
+        background-color: #72AEE6;
+    }
+    body.scrolling nav ul a{
+        color:#fff;
+    }   
+    body.scrolling .mob_sch_ico_wrap a img.mob_sch {
+    opacity: 0;
+    }
+    body.scrolling .mob_sch_ico_wrap a img.mob_sch_bl {
+    opacity: 1;
+    }
+        
+    /* mobile navigation icon */
+
+    body.mobNav nav {
+        right: 0;
+    }
+    body.mobNav h1.tit_mob a img.mob_logo_bl {
+        opacity: 0;
+    }
+    body.mobNav h1.tit_mob a img.mob_logo_wh {
+        opacity: 1;
+    }
+    body.mobNav .kebab_ico span {
+        background-color: #fff;
+    }
+    body.mobNav .kebab_ico span:nth-child(1) {
+        top: 48%;
+        transform: rotate(45deg);
+    }
+    body.mobNav .kebab_ico span:nth-child(2) {
+        display: none;
+        opacity: 0;
+    }
+    body.mobNav .kebab_ico span:nth-child(3) {
+        top: 48%;
+        transform: rotate(-45deg);
+    }
+    body.mobNav .mob_sch_ico_wrap a img.mob_sch {
+        opacity: 1;
+    }
+    body.mobNav .mob_sch_ico_wrap a img.mob_sch_bl {
+        opacity: 0;
+    }
+    .ftr_dep1_list {
+        justify-content: space-around;
+    }
+
+    /* dep1 flex */
+
+    .dep1_list {
+        flex-wrap: wrap;
+    }
+    .dep1_list li {
+        margin-top: 2rem;
+    }
+    /* dep2 */
+    .dep2 {
+        height: 64rem;
+        background: url("../img/mob_dep2_bg.jpg") no-repeat center/cover;
+    }
+    .dep2 .con_txt {
+        margin: 0;
+    }
+    .dep2 .inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+} /* 999px end */
+
+@media screen and (max-width: 799px){
+    html {
+        font-size: 62.5%;
+    }
+
+    /* common */
+
+    .inner {
+        padding: 0 1.5rem;
+    }
+    .dep_tit {
+        font-size: 3rem;
+    }
+    .con_txt {
+        margin: auto;
+        max-width: 32rem;
+        font-size: 1.5rem;
+    }
+    a.btn {
+        padding: 1rem 2.5rem;
+        font-size: 1.6rem;
+    }
+
+    /* hero wrap */
+
+    .hero {
+        height: 80rem;
+    }
+    .hero .inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .hero .img_wrap {
+        margin-top: 14rem;
+        width: 27.4rem;
+        height: 20rem;
+        /* align-self: flex-end; */
+    }
+    .hero .img_wrap .deco_airplane {
+        max-width: 21.3rem;
+        left: 2rem;
+        top: 6.4rem;
+        z-index: 6;
+    }
+    .hero .img_wrap .deco_cloud {
+        max-width: 22.9rem;
+        height: 17.7rem;
+    }
+    .hero_tit {
+        line-height: 3.2rem;
+    }
+    .hero_tit .big {
+        font-size: 3.8rem;
+    }
+    .hero_tit .small {
+        font-size: 3.2rem;
+    }
+    .hero_bg {
+        width: 100%;
+        height: 14.1rem;
+        position: absolute;
+        bottom: 0;
+        background: url("../img/mob_hero_cloud.png") no-repeat;
+    }
+
+    /* dep3 */
+    .dep3_list {
+        justify-content: center;
+    }
+    .dep3_list li {
+        margin: 1rem;
+        width: 33.4rem;
+        height: 26rem;
+    }
+
+    /* footer */
+    .ftr_dep1 {
+        display: none;
+    }
+    .ftr_dep2 {
+        padding: 3rem 0 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ftr_dep2 h4 {
+        width: 22.6rem;
+    }
+    .ftr_list {
+        margin: 4rem 0 2rem;
+    }
+} /* 799px end */
+
